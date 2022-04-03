@@ -12,6 +12,7 @@
 		312BF18227F921CF00457E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 312BF18127F921CF00457E0C /* Assets.xcassets */; };
 		312BF18527F921CF00457E0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 312BF18427F921CF00457E0C /* Preview Assets.xcassets */; };
 		312BF18D27F9242700457E0C /* GeoReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BF18C27F9242700457E0C /* GeoReader.swift */; };
+		31FD4AFF27F932D900F2FF60 /* LazyNScrollViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FD4AFE27F932D900F2FF60 /* LazyNScrollViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		312BF18127F921CF00457E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		312BF18427F921CF00457E0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		312BF18C27F9242700457E0C /* GeoReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoReader.swift; sourceTree = "<group>"; };
+		31FD4AFE27F932D900F2FF60 /* LazyNScrollViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyNScrollViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				312BF18C27F9242700457E0C /* GeoReader.swift */,
+				31FD4AFE27F932D900F2FF60 /* LazyNScrollViews.swift */,
 			);
 			path = Tutorials;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31FD4AFF27F932D900F2FF60 /* LazyNScrollViews.swift in Sources */,
 				312BF18027F921CE00457E0C /* ContentView.swift in Sources */,
 				312BF17E27F921CE00457E0C /* MoonShotApp.swift in Sources */,
 				312BF18D27F9242700457E0C /* GeoReader.swift in Sources */,
