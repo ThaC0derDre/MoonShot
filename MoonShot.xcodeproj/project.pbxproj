@@ -73,12 +73,12 @@
 				312BF17D27F921CE00457E0C /* MoonShotApp.swift */,
 				312BF17F27F921CE00457E0C /* ContentView.swift */,
 				318FDF9827FB7F09005C41B1 /* Astronauts.swift */,
+				318FDF9C27FBA38C005C41B1 /* Missions.swift */,
 				318FDF9A27FB7F68005C41B1 /* Bundle-Decodable.swift */,
 				318FDF9427FB7DE7005C41B1 /* astronauts.json */,
 				318FDF9527FB7DE7005C41B1 /* missions.json */,
 				312BF18127F921CF00457E0C /* Assets.xcassets */,
 				312BF18327F921CF00457E0C /* Preview Content */,
-				318FDF9C27FBA38C005C41B1 /* Missions.swift */,
 			);
 			path = MoonShot;
 			sourceTree = "<group>";
