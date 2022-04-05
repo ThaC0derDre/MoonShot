@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Bundle{
+extension Bundle {
     func decode<T: Decodable>(_ file: String) -> T {
         guard let url = self.url(forResource: file, withExtension: nil) else {
             fatalError("Failed to locate \(file) from Bundle")
@@ -17,7 +17,10 @@ extension Bundle{
             fatalError("Failed to load \(file) from Bundle")
         }
         
-        let decoder = JSONDecoder()
+        let decoder                     = JSONDecoder()
+        let formatter                   = DateFormatter()
+        formatter.dateFormat            = "y-MM-dd"
+        decoder.dateDecodingStrategy    = .formatted(formatter)
         
         guard let loaded = try? decoder.decode(T.self, from: data) else {
             fatalError("Failed to decode \(file) from Bundle")
