@@ -45,6 +45,7 @@ struct MissionView: View {
                         
                         Text("Crew")
                             .font(.title.bold())
+                            .padding(.bottom, 5)
                     }
                     .padding(.horizontal)
                 }
@@ -55,32 +56,32 @@ struct MissionView: View {
                     HStack{
                         ForEach(crew, id: \.role){ member in
                             NavigationLink{
-                                Text("Crew Detail")
+                                AstronautView(astronaut: member.astronaut)
                             } label: {
-                                Image(member.astronaut.id)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 102, height: 74)
-                                    .clipShape(Capsule())
-                                    .overlay(
-                                        Capsule()
-                                            .strokeBorder(.white, lineWidth: 1)
-                                    )
-                                
-                                VStack{
-                                    Text(member.astronaut.name)
-                                        .font(.headline)
-                                        .foregroundColor(.white)
-                                        .padding(.horizontal)
+                                HStack{
+                                    Image(member.astronaut.id)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 104, height: 72)
+                                        .clipShape(Capsule())
+                                        .overlay(
+                                            Capsule()
+                                                .strokeBorder(.white, lineWidth: 1)
+                                        )
                                     
-                                    Text(member.role)
-                                        .font(.caption)
-                                        .foregroundColor(.secondary)
+                                    VStack(alignment: .leading){
+                                        Text(member.astronaut.name)
+                                            .font(.headline)
+                                            .foregroundColor(.white)
+                                        
+                                        Text(member.role)
+                                            .foregroundColor(.secondary)
+                                    }
                                 }
+                                .padding(.horizontal)
                             }
                         }
                     }
-                    .padding(.horizontal)
                 }
             }
         }
@@ -91,14 +92,14 @@ struct MissionView: View {
     
     init(mission: Missions, astronauts: [String: Astronauts]){
         self.missions = mission
-        self.crew = mission.crew.map({ member in
+        self.crew = mission.crew.map{ member in
             if let astronaut = astronauts[member.name] {
                 return CrewMember(role: member.role, astronaut: astronaut)
             }
             else{
                 fatalError("Failed to find \(member) in \(mission.displayName)")
             }
-        })
+        }
     }
 }
 
