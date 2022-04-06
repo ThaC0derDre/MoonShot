@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3123067D27FD13DF002962E4 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3123067C27FD13DF002962E4 /* Color-Theme.swift */; };
 		312BF17E27F921CE00457E0C /* MoonShotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BF17D27F921CE00457E0C /* MoonShotApp.swift */; };
 		312BF18027F921CE00457E0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BF17F27F921CE00457E0C /* ContentView.swift */; };
 		312BF18227F921CF00457E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 312BF18127F921CF00457E0C /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3123067C27FD13DF002962E4 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 		312BF17A27F921CE00457E0C /* MoonShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		312BF17D27F921CE00457E0C /* MoonShotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonShotApp.swift; sourceTree = "<group>"; };
 		312BF17F27F921CE00457E0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				312BF17F27F921CE00457E0C /* ContentView.swift */,
 				318FDF9827FB7F09005C41B1 /* Astronauts.swift */,
 				318FDF9C27FBA38C005C41B1 /* Missions.swift */,
+				3123067C27FD13DF002962E4 /* Color-Theme.swift */,
 				318FDF9A27FB7F68005C41B1 /* Bundle-Decodable.swift */,
 				318FDF9427FB7DE7005C41B1 /* astronauts.json */,
 				318FDF9527FB7DE7005C41B1 /* missions.json */,
@@ -183,6 +186,7 @@
 				318FDF9D27FBA38C005C41B1 /* Missions.swift in Sources */,
 				312BF18D27F9242700457E0C /* GeoReader.swift in Sources */,
 				318FDF9927FB7F09005C41B1 /* Astronauts.swift in Sources */,
+				3123067D27FD13DF002962E4 /* Color-Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

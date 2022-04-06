@@ -28,7 +28,7 @@ struct Missions: Codable, Identifiable {
         "apollo\(id)"
     }
     
-    var formattedLaunchdate: String {
+    var formattedLaunchDate: String {
         launchDate?.formatted(date: .abbreviated, time: .omitted) ?? "N/A"
     }
 }
