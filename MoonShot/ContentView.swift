@@ -36,7 +36,7 @@ struct ContentView: View {
                                     
                                     Text(mission.formattedLaunchDate)
                                         .font(.caption)
-                                        .foregroundColor(.white.opacity(0.9))
+                                        .foregroundColor(.white.opacity(0.8))
                                 }
                                 .padding(.vertical)
                                 .frame(maxWidth: .infinity)
