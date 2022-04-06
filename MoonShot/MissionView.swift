@@ -27,16 +27,29 @@ struct MissionView: View {
                         .frame(maxWidth: geometry.size.width * 0.6)
                         .padding(.top)
                     
+                    Rectangle()
+                        .frame(height: 2)
+                        .foregroundColor(.lightBackground)
+                        .padding(.vertical)
+                    
                     VStack(alignment: .leading){
                         Text("Mission Highlights")
                             .font(.title.bold())
                             .padding(.bottom, 5)
                         
                         Text(missions.description)
+                        Rectangle()
+                            .frame(height: 2)
+                            .foregroundColor(.lightBackground)
+                            .padding(.vertical)
+                        
+                        Text("Crew")
+                            .font(.title.bold())
                     }
                     .padding(.horizontal)
                 }
                 .padding(.bottom)
+                
                 
                 ScrollView(.horizontal, showsIndicators: false){
                     HStack{
@@ -69,7 +82,6 @@ struct MissionView: View {
                     }
                     .padding(.horizontal)
                 }
-                
             }
         }
         .navigationTitle(missions.displayName)
