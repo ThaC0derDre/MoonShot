@@ -1,9 +1,9 @@
 
 # MoonShot
-An app detailing the apollo missions and their crew!
+An app detailing the Apollo missions and their crew!
 
 App created following Paul Hudson's course, Hacking with SwiftUI. 
-Added functionality without assistence as a challenge.
+Added functionality without assistance as a challenge.
 
 ## Demo
 
